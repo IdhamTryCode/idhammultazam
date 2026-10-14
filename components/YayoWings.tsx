@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import { BlurText } from './reactbits/BlurText'
 
 export function YayoWings() {
   return (
     <section className="yayo" id="yayo">
       <div className="section__head" data-reveal>
-        <h2 className="section__title">Usaha saya sendiri</h2>
+        <BlurText as="h2" className="section__title" text="Usaha saya sendiri" delay={90} />
       </div>
 
       <div className="yayo__card" data-reveal>

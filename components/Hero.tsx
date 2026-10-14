@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import { railItems } from '@/lib/projects'
 import { site } from '@/lib/site'
+import { HeroEyebrow } from './HeroEyebrow'
+import { BlurText } from './reactbits/BlurText'
 
 export function Hero() {
   return (
@@ -17,13 +19,25 @@ export function Hero() {
         </div>
 
         <div className="hero__text">
-          <span className="eyebrow hero__eyebrow">Software Engineer</span>
-          <h1 className="hero__title">{site.name}</h1>
-          <p className="hero__lede">
-            Hi, I&apos;m a software engineer who loves exploring new things on my own and
-            building independent projects that solve real, everyday problems. A few of them
-            are live below, so feel free to try them.
-          </p>
+          <span className="eyebrow hero__eyebrow">
+            <HeroEyebrow text="Software Engineer" />
+          </span>
+          <BlurText
+            as="h1"
+            className="hero__title"
+            text={site.name}
+            animateBy="letters"
+            direction="bottom"
+            delay={45}
+          />
+          <BlurText
+            className="hero__lede"
+            text="Hi, I'm a software engineer who loves exploring new things on my own and building independent projects that solve real, everyday problems. A few of them are live below, so feel free to try them."
+            direction="bottom"
+            delay={22}
+            startDelay={450}
+            stepDuration={0.3}
+          />
           <a className="hero__cta" href="#karya">
             See my projects <span aria-hidden="true">↓</span>
           </a>

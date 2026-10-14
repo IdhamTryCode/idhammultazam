@@ -1,11 +1,12 @@
 import { site } from '@/lib/site'
+import { BlurText } from './reactbits/BlurText'
 
 export function Contact() {
   return (
     <section className="contact" id="connect">
       <div className="contact__grid" data-reveal>
         <div className="contact__text">
-          <h2 className="contact__title">Connect with me</h2>
+          <BlurText as="h2" className="contact__title" text="Connect with me" delay={90} />
         </div>
 
         <div className="contact__links">
