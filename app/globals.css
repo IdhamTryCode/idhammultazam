@@ -127,7 +127,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: 'Schibsted Grotesk', system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
@@ -170,7 +170,7 @@ img { max-width: 100%; }
 }
 
 .eyebrow {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 12px;
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -218,7 +218,7 @@ img { max-width: 100%; }
   color: var(--btn-ink);
   display: grid;
   place-items: center;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 12px;
   font-weight: 500;
 }
@@ -586,7 +586,7 @@ img { max-width: 100%; }
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-family: 'Schibsted Grotesk', system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   color: #0F172A;
 }
 
@@ -787,7 +787,7 @@ img { max-width: 100%; }
 }
 
 .yayo__eyebrow {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 12px;
   letter-spacing: .06em;
   text-transform: uppercase;

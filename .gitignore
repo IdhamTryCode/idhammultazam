@@ -1,15 +1,33 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# production / deploy
+build/
+dist/
+.vercel/
+
+# env
+.env
+.env*.local
+
+# misc
+*.log
+*.tsbuildinfo
+.eslintcache
+
 # OS / editor noise
 .DS_Store
 Thumbs.db
 desktop.ini
 .vscode/
 .idea/
-
-# Build / tooling output
-node_modules/
-dist/
-.vercel/
-*.log
 
 # Personal documents — these contain private contact details.
 # Remove these two lines if you deliberately want the CV published.
