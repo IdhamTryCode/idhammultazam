@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview · Portfolio v2</title>
+<!-- Design harness, not part of the public site. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  *{ box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #E7E5DF;
+    font-family: 'Schibsted Grotesk', system-ui, sans-serif;
+    color: #141413;
+  }
+  a { color: #141413; }
+  a:hover { color: #4F4D48; }
+
+  .wrap {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .kicker {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 13px;
+    color: #6B6862;
+  }
+  .head h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: -.02em;
+  }
+
+  .frames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+    align-items: flex-start;
+  }
+  .frame {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .frame__label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+  }
+  .tag {
+    padding: 3px 9px;
+    border-radius: 6px;
+    background: #141413;
+    color: #F5F4F0;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 12px;
+  }
+
+  /* 1a — phone shell */
+  .device-phone {
+    width: 414px;
+    padding: 12px;
+    border-radius: 56px;
+    background: #0A0A0A;
+    box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .5);
+  }
+  .device-phone iframe {
+    display: block;
+    width: 390px;
+    height: 844px;
+    border: 0;
+    border-radius: 44px;
+    background: #F5F4F0;
+  }
+
+  /* 1b — browser shell */
+  .device-desktop {
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .35);
+  }
+  .device-desktop__chrome {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 14px;
+    background: #ECEAE4;
+  }
+  .device-desktop__chrome span {
+    width: 11px;
+    height: 11px;
+    border-radius: 9px;
+    background: #CFCCC4;
+  }
+  .device-desktop iframe {
+    display: block;
+    width: 1440px;
+    height: 900px;
+    border: 0;
+  }
+</style>
+</head>
+<body>
+
+<section class="wrap">
+  <div class="head">
+    <span class="kicker">Portfolio v2 · Bahasa Indonesia · mobile-first</span>
+    <h1>Preview</h1>
+  </div>
+
+  <div class="frames">
+    <div class="frame" id="1a">
+      <div class="frame__label"><span class="tag">1a</span><span>Mobile · 390 × 844 (utama)</span></div>
+      <div class="device-phone">
+        <iframe src="index.html" title="Mobile" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="frame" id="1b">
+      <div class="frame__label"><span class="tag">1b</span><span>Desktop · 1440 × 900</span></div>
+      <div class="device-desktop">
+        <div class="device-desktop__chrome" aria-hidden="true"><span></span><span></span><span></span></div>
+        <iframe src="index.html" title="Desktop" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

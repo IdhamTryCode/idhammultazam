@@ -1,0 +1,20 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Build / tooling output
+node_modules/
+dist/
+.vercel/
+*.log
+
+# Personal documents — these contain private contact details.
+# Remove these two lines if you deliberately want the CV published.
+CV_Idham_Multazam_*.pdf
+CV_Idham_Multazam_*.docx
+
+# Source brief for the Claude Design project (working material, not the site)
+prompt-claude-design.md
