@@ -12,20 +12,20 @@ export function Hero() {
             alt={`Potret ${site.name}`}
             fill
             priority
-            sizes="(min-width: 900px) 450px, 100vw"
+            sizes="(min-width: 900px) 450px, 260px"
           />
         </div>
 
         <div className="hero__text">
-          <span className="eyebrow hero__eyebrow">Software Engineer · Demak</span>
+          <span className="eyebrow hero__eyebrow">Software Engineer</span>
           <h1 className="hero__title">{site.name}</h1>
           <p className="hero__lede">
-            Halo, saya Idham. Software engineer dari Demak yang suka bikin aplikasi dari nol,
-            mulai dari tampilan sampai bisa dipakai orang. Beberapa di antaranya bisa langsung
-            kamu coba di bawah.
+            Hi, I&apos;m a software engineer who loves exploring new things on my own and
+            building independent projects that solve real, everyday problems. A few of them
+            are live below, so feel free to try them.
           </p>
           <a className="hero__cta" href="#karya">
-            Lihat karya saya <span aria-hidden="true">↓</span>
+            See my projects <span aria-hidden="true">↓</span>
           </a>
         </div>
       </div>

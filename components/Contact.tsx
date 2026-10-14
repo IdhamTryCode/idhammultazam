@@ -2,11 +2,10 @@ import { site } from '@/lib/site'
 
 export function Contact() {
   return (
-    <section className="contact" id="sapa">
+    <section className="contact" id="connect">
       <div className="contact__grid" data-reveal>
         <div className="contact__text">
-          <h2 className="contact__title">Sapa saya</h2>
-          <p className="contact__copy">Mau ngobrol atau sekadar kenalan? Saya ada di sini.</p>
+          <h2 className="contact__title">Connect with me</h2>
         </div>
 
         <div className="contact__links">

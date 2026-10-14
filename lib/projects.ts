@@ -131,22 +131,19 @@ export const railItems = [
 export const experience = [
   { what: 'IT di Bank Jateng', when: 'Sep 2026 – sekarang' },
   { what: 'Software Engineer di RantAI', when: 'Sep 2024 – 2026' },
-  {
-    what: 'Magang Web Developer di PT Bhakti Usaha Jaya, Semarang',
-    when: 'Des 2022 – Apr 2023',
-  },
+  { what: 'Web Dev Intern di PT Bhakti Usaha Jaya, Semarang', when: 'Des 2022 – Apr 2023' },
 ] as const
 
 export const stack = [
-  { label: 'Bahasa pemrograman', value: 'TypeScript, JavaScript, Dart, Python, SQL' },
-  { label: 'Tampilan', value: 'Next.js, React, Tailwind CSS, shadcn/ui, Radix UI, Flutter' },
+  { label: 'Languages', value: 'TypeScript, JavaScript, Dart, Python, SQL' },
+  { label: 'Frontend', value: 'Next.js, React, Tailwind CSS, shadcn/ui, Radix UI, Flutter' },
   {
-    label: 'Server & database',
+    label: 'Backend & Database',
     value: 'Node.js, Hono, FastAPI, PostgreSQL, Supabase, Prisma, SQLite',
   },
-  { label: 'AI', value: 'Menghubungkan aplikasi dengan AI, merancang prompt, RAG' },
+  { label: 'AI', value: 'LLM integration, prompt design, RAG' },
   {
-    label: 'Infrastruktur',
+    label: 'Infra & DevOps',
     value: 'Docker, Kubernetes, Google Cloud Platform, Vercel, GitHub Actions, Git',
   },
 ] as const

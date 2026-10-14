@@ -24,7 +24,7 @@ export function About() {
       </div>
 
       <div className="block" data-reveal>
-        <h2 className="block__title">Alat yang biasa saya pakai</h2>
+        <h2 className="block__title">Tech Stack</h2>
         <dl className="stack">
           {stack.map((group) => (
             <div className="stack__group" key={group.label}>

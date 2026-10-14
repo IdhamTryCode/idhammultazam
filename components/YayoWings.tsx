@@ -3,6 +3,10 @@ import Image from 'next/image'
 export function YayoWings() {
   return (
     <section className="yayo" id="yayo">
+      <div className="section__head" data-reveal>
+        <h2 className="section__title">Usaha saya sendiri</h2>
+      </div>
+
       <div className="yayo__card" data-reveal>
         <div className="yayo__media">
           <Image
@@ -10,24 +14,23 @@ export function YayoWings() {
             alt="Chicken wings ala Korea dengan saus gochujang dan madu"
             width={1024}
             height={506}
-            sizes="(min-width: 1280px) 1240px, 100vw"
+            sizes="(min-width: 760px) 280px, 100vw"
           />
-          <div className="yayo__badge">
-            <Image src="/assets/yayo-wings/logo.png" alt="" width={26} height={26} />
-            <span>Yayo Wings · Demak</span>
-          </div>
         </div>
 
-        <div className="yayo__grid">
-          <div className="yayo__text">
-            <span className="yayo__eyebrow">Usaha saya sendiri</span>
-            <h2 className="yayo__title">Rasa Korea, bahan Demak.</h2>
-            <p className="yayo__copy">
-              Selain ngoding, saya juga punya usaha kuliner sendiri di Demak: Yayo Wings,
-              chicken wings ala Korea dengan saus gochujang dan madu. Website-nya juga saya
-              buat sendiri.
-            </p>
+        <div className="yayo__body">
+          <div className="yayo__name">
+            <Image src="/assets/yayo-wings/logo.png" alt="" width={32} height={32} />
+            <div>
+              <h3>Yayo Wings</h3>
+              <span>Korean chicken wings · Demak</span>
+            </div>
           </div>
+
+          <p className="yayo__copy">
+            Selain ngoding, saya juga punya usaha kuliner sendiri: chicken wings ala Korea
+            dengan saus gochujang dan madu. Website-nya juga saya buat sendiri.
+          </p>
 
           <div className="yayo__actions">
             <a
@@ -44,7 +47,7 @@ export function YayoWings() {
               target="_blank"
               rel="noopener"
             >
-              Instagram @yayo_wings →
+              @yayo_wings →
             </a>
           </div>
         </div>

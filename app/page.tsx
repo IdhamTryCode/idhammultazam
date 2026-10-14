@@ -11,7 +11,7 @@ const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: site.name,
-  alternateName: site.shortName,
+  alternateName: site.fullName,
   jobTitle: site.role,
   email: site.email,
   url: siteUrl,
@@ -45,7 +45,7 @@ export default function HomePage() {
       </main>
 
       <footer className="footer">
-        <span>© 2026 {site.name} · Demak</span>
+        <span>© 2026 {site.name}</span>
         <span>Debug pakai console.log, dan saya tidak malu.</span>
       </footer>
 
