@@ -4,7 +4,7 @@ export function About() {
   return (
     <section className="about" id="tentang">
       <div className="block" data-reveal>
-        <h2 className="block__title">Pengalaman</h2>
+        <h2 className="block__title">Experience</h2>
         <div className="rows">
           {experience.map((item) => (
             <div className="row" key={item.what}>
@@ -16,9 +16,9 @@ export function About() {
       </div>
 
       <div className="block" data-reveal>
-        <h2 className="block__title">Pendidikan</h2>
+        <h2 className="block__title">Education</h2>
         <div className="row row--standalone">
-          <span className="row__what">S1 Ilmu Komputer, Universitas Diponegoro</span>
+          <span className="row__what">Bachelor of Computer Science, Universitas Diponegoro</span>
           <span className="row__when">2020 – 2024</span>
         </div>
       </div>

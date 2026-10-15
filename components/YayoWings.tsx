@@ -5,7 +5,7 @@ export function YayoWings() {
   return (
     <section className="yayo" id="yayo">
       <div className="section__head" data-reveal>
-        <BlurText as="h2" className="section__title" text="Usaha saya sendiri" delay={90} />
+        <BlurText as="h2" className="section__title" text="My own business" delay={90} />
       </div>
 
       <div className="yayo__card" data-reveal>

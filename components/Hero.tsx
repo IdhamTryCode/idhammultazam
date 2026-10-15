@@ -14,7 +14,7 @@ export function Hero() {
             alt={`Potret ${site.name}`}
             fill
             priority
-            sizes="(min-width: 900px) 450px, 260px"
+            sizes="(min-width: 900px) 450px, 100vw"
           />
         </div>
 

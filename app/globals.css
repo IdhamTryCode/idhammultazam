@@ -41,9 +41,9 @@
   --bnav-space: 96px;
   --hero-cols: minmax(0, 1fr);
   --hero-areas: "photo" "text";
-  --hero-photo-h: clamp(200px, 36svh, 340px);
-  --hero-photo-w: auto;
-  --hero-photo-justify: start;
+  --hero-photo-h: auto;
+  --hero-photo-w: 100%;
+  --hero-photo-ratio: 4 / 5;
   --hero-pt: 16px;
   --pj-flow: column;
   --pj-auto: min(84%, 360px);
@@ -65,7 +65,7 @@
     --hero-areas: "text photo";
     --hero-photo-h: 560px;
     --hero-photo-w: 100%;
-    --hero-photo-justify: stretch;
+    --hero-photo-ratio: auto;
     --hero-pt: 72px;
     --pj-flow: row;
     --pj-auto: auto;
@@ -324,10 +324,9 @@ img { max-width: 100%; }
   grid-area: photo;
   position: relative;
   height: var(--hero-photo-h);
-  /* mobile: the box takes the portrait's own 3:4 shape so nothing is cropped */
+  /* mobile: full width at 4:5, close to the portrait's own 3:4 so only a sliver is trimmed */
   width: var(--hero-photo-w);
-  aspect-ratio: 896 / 1200;
-  justify-self: var(--hero-photo-justify);
+  aspect-ratio: var(--hero-photo-ratio);
   border-radius: 24px;
   overflow: hidden;
   background: var(--surface-2);
@@ -338,7 +337,7 @@ img { max-width: 100%; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 22%;
+  object-position: 50% 20%;
 }
 
 .hero__text {

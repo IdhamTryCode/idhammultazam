@@ -129,9 +129,9 @@ export const railItems = [
 ] as const
 
 export const experience = [
-  { what: 'IT di Bank Jateng', when: 'Sep 2026 – sekarang' },
-  { what: 'Software Engineer di RantAI', when: 'Sep 2024 – 2026' },
-  { what: 'Web Dev Intern di PT Bhakti Usaha Jaya, Semarang', when: 'Des 2022 – Apr 2023' },
+  { what: 'IT at Bank Jateng', when: 'Sep 2026 – Present' },
+  { what: 'Software Engineer at RantAI', when: 'Sep 2024 – 2026' },
+  { what: 'Intern Developer at Bhakti Usaha Jaya', when: 'Dec 2022 – Apr 2023' },
 ] as const
 
 export const stack = [
