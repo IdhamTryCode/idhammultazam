@@ -131,7 +131,7 @@ export const railItems = [
 export const experience = [
   { what: 'IT at Bank Jateng', when: 'Sep 2026 – Present' },
   { what: 'Software Engineer at RantAI', when: 'Sep 2024 – 2026' },
-  { what: 'Intern Developer at Bhakti Usaha Jaya', when: 'Dec 2022 – Apr 2023' },
+  { what: 'Intern Dev at Bhakti Usaha Jaya', when: 'Dec 2022 – Apr 2023' },
 ] as const
 
 export const stack = [
