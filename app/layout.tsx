@@ -39,7 +39,15 @@ export const metadata: Metadata = {
     description: site.ogDescription,
     images: [site.portrait],
   },
-  icons: { icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }] },
+  icons: {
+    // the SVG swaps between the gold/ink and gold/white marks with the
+    // browser's colour scheme; the PNG covers browsers without SVG favicons
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-48.png', type: 'image/png', sizes: '48x48' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+  },
 }
 
 export const viewport: Viewport = {

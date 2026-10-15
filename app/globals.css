@@ -226,17 +226,17 @@ img { max-width: 100%; }
 }
 
 .brand__mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  background: var(--btn);
-  color: var(--btn-ink);
+  width: 32px;
+  height: 32px;
   display: grid;
   place-items: center;
-  font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 12px;
-  font-weight: 500;
+  flex: none;
 }
+
+.brand__logo { width: 32px; height: 32px; object-fit: contain; }
+.brand__logo.is-dark { display: none; }
+[data-theme="dark"] .brand__logo.is-dark { display: block; }
+[data-theme="dark"] .brand__logo.is-light { display: none; }
 
 .header__links {
   display: var(--hnav);

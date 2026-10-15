@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { nav, site } from '@/lib/site'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -6,8 +7,11 @@ export function Header() {
     <header className="header">
       <nav className="header__nav" aria-label="Utama">
         <a className="brand" href="#top">
+          {/* Both marks are rendered; globals.css shows the one for the active
+              theme, so the right logo is there from the first paint. */}
           <span className="brand__mark" aria-hidden="true">
-            IM
+            <Image className="brand__logo is-light" src="/assets/brand/logo-mark-light.png" alt="" width={32} height={32} priority />
+            <Image className="brand__logo is-dark" src="/assets/brand/logo-mark.png" alt="" width={32} height={32} priority />
           </span>
           <span>{site.shortName}</span>
         </a>
