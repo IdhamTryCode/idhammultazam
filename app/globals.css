@@ -201,7 +201,6 @@ img { max-width: 100%; }
   z-index: 50;
   background: var(--nav);
   backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   border-bottom: 1px solid var(--line);
 }
 
@@ -281,7 +280,6 @@ img { max-width: 100%; }
   border-radius: 999px;
   background: var(--bar);
   backdrop-filter: saturate(1.4) blur(16px);
-  -webkit-backdrop-filter: saturate(1.4) blur(16px);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .35), 0 0 0 1px var(--line);
   justify-content: space-between;
   gap: 4px;
@@ -763,6 +761,27 @@ img { max-width: 100%; }
 }
 
 .pj-stack .card__stage { height: 280px; }
+
+/* desktop project grid — React Bits SpotlightCard around each card. The cards
+   have opaque backgrounds, so the light is lifted above the content (blended,
+   never catching pointer events) instead of sitting behind it. */
+.track > .pj-spot {
+  padding: 0;
+  border-radius: 24px;
+  background-color: transparent;
+  box-shadow: none;
+  display: flex;
+}
+
+.track > .pj-spot > .card { flex: 1; }
+
+.track > .pj-spot > .spotlight-card__light { z-index: 2; mix-blend-mode: multiply; }
+
+[data-theme="dark"] .track > .pj-spot > .spotlight-card__light { mix-blend-mode: screen; }
+
+.track > .pj-spot > .spotlight-card__border { display: none; }
+
+.track > .pj-spot > .spotlight-card__edge { z-index: 3; }
 
 /* ---------------------------------------------------------- yayo wings --- */
 

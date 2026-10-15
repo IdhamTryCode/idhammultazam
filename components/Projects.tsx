@@ -11,7 +11,10 @@ export function Projects() {
         <p className="section__sub">Semuanya saya kerjakan sendiri, dari desain sampai online.</p>
       </div>
 
-      <ProjectTrack ids={projects.map((project) => project.id)}>
+      <ProjectTrack
+        ids={projects.map((project) => project.id)}
+        accents={projects.map((project) => project.vars['--card-accent'] ?? 'currentColor')}
+      >
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
