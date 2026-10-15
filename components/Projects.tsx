@@ -11,7 +11,7 @@ export function Projects() {
         <p className="section__sub">Semuanya saya kerjakan sendiri, dari desain sampai online.</p>
       </div>
 
-      <ProjectTrack count={projects.length}>
+      <ProjectTrack ids={projects.map((project) => project.id)}>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
