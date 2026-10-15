@@ -9,7 +9,7 @@ export const site = {
   name: 'Idham Multazam',
   fullName: 'Idham Hanif Multazam',
   shortName: 'Idham Multazam',
-  title: 'Idham Multazam · Software Engineer',
+  title: 'Idham Multazam',
   role: 'Software Engineer',
   locality: 'Demak',
   region: 'Jawa Tengah',

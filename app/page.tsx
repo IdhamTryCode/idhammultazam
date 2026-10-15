@@ -46,7 +46,6 @@ export default function HomePage() {
 
       <footer className="footer">
         <span>© 2026 {site.name}</span>
-        <span>Debug pakai console.log, dan saya tidak malu.</span>
       </footer>
 
       <script
